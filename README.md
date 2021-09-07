@@ -11,6 +11,6 @@ Examples with database connection codes in PHP
 1. Criar um banco de dados chamado suporte (CREATE DATABASE suporte;)
 2. Solicitar a utilização do banco recém-criado: (USE suporte;)
 3. Criar a tabela Atividade:
-* CREATE TABLE Atividade ( ID INTEGER NOT NULL AUTO_INCREMENT, Titulo VARCHAR(50) NOT NULL, Descricao VARCHAR(2048) NOT NULL, DtCriacao DATETIME DEFAULT NOW(), Responsavel VARCHAR(80), Progresso TINYINT NOT NULL DEFAULT '0', Situacao TINYINT NOT NULL DEFAULT '1', CONSTRAINT PK_ATIVIDADE PRIMARY KEY (ID) );
+* CREATE TABLE Atividade ( CREATE TABLE Atividade (ID INTEGER NOT NULL AUTO_INCREMENT, Titulo VARCHAR(50) NOT NULL, Descricao VARCHAR(2048) NOT NULL, DtCriacao DATETIME DEFAULT NOW(), Responsavel VARCHAR(80), Progresso TINYINT NOT NULL DEFAULT '0', Situacao TINYINT NOT NULL DEFAULT '1', CONSTRAINT PK_ATIVIDADE PRIMARY KEY (ID) ); )
 4. Adicionar algumas atividades de exemplo:
 * INSERT INTO Atividade (Titulo, Descricao) VALUES ('Atividade 1', 'Descrição 1'), ('Atividade 2', 'Descrição 2');
